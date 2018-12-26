@@ -1,0 +1,80 @@
+.calendar {
+	margin-bottom: 10px;
+}
+.calendar > tbody > tr > td, .calendar > tbody > tr > th, .calendar > tfoot > tr > td, .calendar > tfoot > tr > th, .calendar > thead > tr > td, .calendar > thead > tr > th {
+	border:1px solid #DDD;
+	text-align: center;
+	padding: 0px;
+}
+.calendar > tbody > tr > td > a, .calendar > thead > tr > td > a, .calendar > tfoot > tr > td > a {
+	display: block;
+	width: 100%;
+	color: #555;
+	text-decoration: none;
+	padding: 8px;
+}
+.calendar .calendar-row .calendar-day-head {
+	font-weight: bold;
+	color: #444;
+	background-color: #EFEFEF;
+	box-shadow: inset 3px 5px 10px #FDFDFD;
+	padding: 8px;
+}
+.calendar .calendar-row .calendar-day {
+	background-color: #FBFBFB;
+	box-shadow: inset 3px 5px 10px #FDFDFD;
+	transition-duration:0.3s;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+	-moz-osx-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+}
+.calendar .calendar-row .calendar-day:hover {
+	background-color: #fff;
+	box-shadow: inset 0px 0px 10px #ECECEC;
+}
+.calendar .calendar-row .calendar-day.event > a {
+	background-color: #F35050;
+	box-shadow: inset 3px 5px 10px #FF6060;
+	color: #fff;
+	transition-duration:0.3s;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+	-moz-osx-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+}
+.calendar .calendar-row .calendar-day.event > a:hover {
+	background-color: #F63939;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+.calendar .calendar-row .calendar-day.active > a {
+	background-color: #24A8FC;
+	box-shadow: 3px 5px 10px #60BCFF inset;
+	transition-duration:0.3s;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+	-moz-osx-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+}
+.calendar .calendar-row .calendar-day.active > a:hover {
+	background-color: #0099FB;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+.calendar .calendar-row .calendar-day-np {
+	background-color: #ECECEC;
+	color: #DDD;
+}
+.xs-sm {
+	display: block;
+}
+.sm-md {
+	display: none;
+}
+@media (max-width: 417px) {
+	.xs-sm {
+	display: none;
+	}
+	.sm-md {
+		display: block;
+	}
+}
